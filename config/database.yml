@@ -20,7 +20,7 @@ production:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: blog_caffe_production
+  database: connect_to_production
   pool: 5
   username: 
   password: 
