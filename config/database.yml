@@ -1,0 +1,26 @@
+development:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: connect_to_development
+  pool: 5
+  username: connectdbuser
+  password: connectdb123
+
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: connect_to_test
+  pool: 5
+  username: connectdbuser
+  password: connectdb123
+
+production:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: blog_caffe_production
+  pool: 5
+  username: 
+  password: 
