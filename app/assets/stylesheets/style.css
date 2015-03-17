@@ -1,0 +1,318 @@
+
+body{
+  background: url(fondo_dash.png) no-repeat center center fixed;
+  
+}
+body ,a {
+  color: rgba(87, 86, 86, 0.61);
+}
+.borde{
+  border:solid 1px #000;
+}
+.botones{
+  margin-left: -210px;
+}
+
+.btn-save{
+    color: #26C5AB;
+    background-color: #fff;
+    border-color: #ccc;
+    border: none !important;
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: 128px;
+    }
+.botton-edit{
+  margin-left: 147px;
+  margin-top: -31px;
+}
+
+.gri{
+  float: right;
+  margin-top: -205px;
+  margin-right: -80px;
+}
+
+.gri-one{
+  float: right;
+  margin-top: -205px;
+  margin-right: -163px;
+}
+.gri-two{
+  float: right;
+  margin-top: -409px;
+  margin-right: -118px;
+}
+.gri-3{
+  float: right;
+  margin-top: -472px;
+}
+.gri-4{
+
+}
+.gri-two-1{
+  float: right;
+  margin-top: 9px;
+  margin-right: -107px;
+
+
+}
+.edit{
+  margin-top: 128px;
+  font-size: 15px;
+  text-align: right;
+
+}
+.edit-2{
+  margin-top: 58px;
+}
+.migrid {
+    border: solid #F8F9F9 1px;
+    overflow-y: scroll;
+    height: 200px;
+    width: 319px;
+}
+.migrid-2{
+border: solid #F8F9F9 1px;
+overflow-y: scroll;
+height: 200px;
+width: 290px;
+margin-top: 16px;
+margin-left: -22px;
+}
+
+.migrid-5{
+border: solid #F8F9F9 1px;
+overflow-y: scroll;
+height: 151px;
+width: 290px;
+margin-top: 108px;
+margin-left: -88px;
+}
+.form-catogirias{
+   
+  border: 1px solid #000;
+  border-radius:0px !important;
+  width: 209px;
+  height: 34px;
+  margin-top: 11px;
+  }
+
+.form-label-name{
+   border: 1px solid #000;
+  border-radius:0px !important;
+  background-color: #B5B5B5;
+  width: 209px;
+}
+
+.form-filter{
+  border: 1px solid #000;
+  border-radius:0px !important;
+  padding-bottom: 35px;
+  width: 209px;
+  }
+
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.login{
+  margin-right: 45px;
+  margin-top: 59px;
+  float: right;
+}
+.left-side{
+  background: #33495D;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  margin-top: 70px;
+
+}
+
+.left-menu{
+  
+  color: #BAC2C9;
+  min-height: 1882px;
+}
+
+.selected-item{
+  background: #243341;
+}
+.slogan{
+  text-align: center;
+margin-left: 397px;
+font-size: 31px;
+margin-top: -20px;
+color: rgba(87, 86, 86, 0.61);
+}
+.title-menu{
+  padding: 5px;
+  margin-top: 150px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+
+.item-menu{
+  width: 100%;
+  margin-top: 30px;
+  font-size: 17px;
+  text-align: left;
+  margin-left: 19px;
+}
+.item-menu a {
+ color: #fff;
+
+}
+
+
+.right-content{
+  min-height: 848px;
+  background-color: #fff;
+  margin-top: 70px;
+  margin-bottom: 73px;
+
+}
+
+.logo{
+   height: 124px;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 347px;
+}
+
+.divider{
+  border: 1px solid #F8F9F9;
+  display: block;
+  height: 1px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.divider-2{
+  border: 1px solid #F8F9F9;
+  display: block;
+  height: 1px;
+  margin-top: -14px;
+  width: 100%;
+}
+
+.rigth-side{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.scrol{
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+.search{
+margin-bottom: 0px;
+margin-top: 14px;
+margin-right: 38px;
+margin-left: -23px;
+  
+}
+
+footer{
+  padding-top: 73px;
+}
+/*esto es para boton de search
+*/
+ #custom-search-form {
+        margin:0;
+        margin-top: 5px;
+        padding: 0;
+    }
+ 
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-transition: width  0.2s ease-in-out;
+    -moz-transition:width  0.2s ease-in-out;
+    -o-transition: width  0.2s ease-in-out;
+    transition: width  0.2s ease-in-out;
+    }
+ 
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    #edicion{
+      margin-top: 92px;
+      margin-bottom: -115px;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }   
+    .search-query:focus{
+        width: 260px;
+    }   
+
+
+
+  /*  clases sobreescitas */
+
+  .form-inline .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  border: none !important;
+  }
+
+  .btn-default {
+    color: #26C5AB;
+    background-color: #fff;
+    border-color: #ccc;
+    border: none !important;
+    }
+
+    h3{
+      font-size: 24px;
+      color: #26C5AB;
+    }
+
+/*ESTILOS DE  iconos*/
+
+.glyphicon-align-justify:before {
+content: "\e055";
+font-size: 32px;
+}
+.glyphicon-time:before {
+content: "\e023";
+font-size: 32px;
+}
+
+.glyphicon-comment:before {
+content: "\e111";
+font-size: 29px;
+}
+
+.glyphicon-cog:before {
+content: "\e019";
+font-size: 29px;
+}
+

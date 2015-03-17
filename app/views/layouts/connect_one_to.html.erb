@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Connect One Life</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="jquery-scrollTo/lib/jquery-scrollto.js"></script>
+  <%= stylesheet_link_tag "style" %>
+  <%= javascript_include_tag "jquery-1.11.1" %>
+  <%= javascript_include_tag "jquery.scrollTo"%>
+
+
+  
+</head>
+<body >
+
+  <div class="container"> <!-- AQUI COMIENZA EL CONTAINER  -->
+    <div class="row ">
+      <div class="mim">
+        <div  class="col-md-2 left-side">
+          <div class="left-menu">
+            <div class="title-menu selected-item item-">
+              <p>DASHBOARD</p>
+            </div>
+             
+            <!-- <div class="item-menu"><a href="javascript:$('#categories').ScrollTo();">CATEGORIES</a></div> --> 
+            <div  class="item-menu"><span class="glyphicon glyphicon-align-justify"> </span><a href="#"> CATEGORIES </a></div>
+
+            <div class="item-menu"><span class="glyphicon glyphicon-time"> </span><a href="javascript:$('#filters').ScrollTo();"> FILTERS </a></div>
+ 
+            <div class="item-menu"><span class="glyphicon glyphicon-comment"> </span><a href="javascript:$('#banners').ScrollTo();"> BANNERS</a></div>
+
+            <div class="item-menu"><span class="glyphicon glyphicon-comment"> </span><a href="javascript:$('#settings').ScrollTo();"> SETTING</a></div>
+
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="mim">
+        <div class="col-md-10 rigth-side">
+          <div class="right-content">
+            <%= image_tag "logo.png" %>
+            <a href="login.html">
+           <!-- <img class="login" src="img/login.png" alt="login"> -->
+            <%= image_tag "login.png", class: "login"%>
+            </a>
+            <div class="slogan">
+              <p>One life at a time</p>
+            </div>
+              <div class="divider-2"></div>
+             
+              <div class="row"><!-- AQUI EMPIEZA OCL DE CATEGORIE -->
+                <div class="col-md-7">
+                 <div id="categories">
+                  <h3>CATEGORIES</h3>
+                  <h4 ></h4>
+                  <form class="form-inline">
+                    <div class="form-group">
+                      <p class="form-control-static">CREATE NEW CATEGORIES:</p>
+                    </div>
+                    <div class="form-group">
+                      <input type="" class="form-control" id="save_Categoria" placeholder="">
+                    </div>
+                  <button type="submit" class="btn btn-default">Save</button>
+                  <%= image_tag "icon.png", class: "icon"%>
+                  </form> 
+                <div class="migrid"></div>
+          <div class="row">
+             <div class="gri-one">
+               <div class="col-md-4 col-sm-4 col-xs-4">
+                <button type="submit" class="btn btn-default">Edit <%= image_tag "icon.png", class: "icon"%></button>
+                <button type="submit" class="btn btn-default">Filter <%= image_tag "icon.png", class: "icon"%></button>
+                <button type="submit" class="btn btn-default">Active <%= image_tag "icon.png", class: "icon"%></button>
+                <button type="submit" class="btn btn-default">Desactive <%= image_tag "icon.png", class: "icon"%></button>
+                
+               </div>
+              </div>
+              
+            </div>
+         </div>
+       </div>
+       </div> <!-- AQUI TERMINA COL DE CATEGORIAS -->
+
+
+       <!-- AQUI EMPIEZA COL DE FILTERS -->
+       <div id="filters">
+  <div class="row ">
+    <div class="col-md-6 col-sm-6 col-xs-6 edit-2">
+      <h3>FILTERS</h3>
+      <h4>CREATE NEW FILTER:</h4>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Nombre:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-label-name" id="" placeholder="">
+      </div>
+    </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Address:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-filter" id="" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Tel:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-filter" id="" placeholder="">
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Horario:</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-filter" id="" placeholder="">
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">More:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-filter" id="" placeholder="">
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Assign Categories:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-catogirias" id="" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-save">Save <%= image_tag "icon.png", class: "icon"%></button>
+    </div>
+  </div> 
+</form>
+
+<!-- <div class="row"> -->
+   <div class="gri-two">
+     <div class="col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
+      <button type="submit" class="btn btn-default">Delete <%= image_tag "icon.png", class: "icon"%></button>
+
+      <button type="submit" class="btn btn-default">Active<%= image_tag "icon.png", class: "icon"%></button>
+      <button type="submit" class="btn btn-default">Desactive<%= image_tag "icon.png", class: "icon"%></button>
+     </div>  
+    </div> 
+  </div>
+  
+  <div class="col-md-6 ">
+   <div class="row ">
+   <div class="col-md-5">
+     <h4 id="edicion">EDIT</h4>
+    <div class="edit">
+      <label>Search by Category</label><br>
+      <label>or filter:</label>
+    </div>
+   </div>
+      <div class="col-md-7 edit">
+        <div class="search">
+          <div class="input-group custom-search-form ">
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+             <span class="glyphicon glyphicon-search"></span>
+          </div>
+          </div> 
+        </div> 
+      </div>
+
+     <div class="row">
+        <div class="col-md-2">
+          <label for="filters">
+            Filter:
+          </label>
+        </div>
+        <div class="text-area">
+        <div class="col-md-6">
+        <div class="migrid-2"></div>
+        </div>
+      </div>
+      </div>
+      
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+          <div class="botton-edit"> 
+            <button type="submit" class="btn btn-save">Edit <%= image_tag "icon.png", class: "icon"%></button>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="divider"></div> 
+
+  </div><!--  AQUI TERMINA COL DE FILter  -->
+  </div>
+   <div class="row "><!-- AQUI INICIA CON BANNER -->
+    <div class="divider"></div>
+      <div class="col-md-6 col-sm-6 col-xs-6 edit-2">
+      <div id="banners"></div>
+      <div id ="banners">
+        <h3>BANNERS</h3>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Nombre:</label>
+          <div class="col-sm-10">
+          <input type="text" class="form-label-name" id="" placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Image:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-label-name" id="" placeholder="">
+        </div>
+      </div>
+    </form>
+
+  
+<!-- <div class="row"> -->
+   <div class="gri-two-1">
+     <div class="col-md-2 col-md-offset-1 col-sm-2 col-xs-2">
+      <button type="submit" class="btn btn-default">Active <%= image_tag "icon.png", class: "icon"%></button>
+      <button type="submit" class="btn btn-default">Desative <%= image_tag "icon.png", class: "icon"%></button>
+      <button type="submit" class="btn btn-default">Delete <%= image_tag "icon.png", class: "icon"%></button>
+     </div> 
+  </div>
+      <div class="col-md-6">
+        <div class="migrid-2"></div>
+          </div>
+          <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-save">Save<%= image_tag "icon.png", class: "icon"%></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      <div id="settings">
+      <div class="row "><!-- AQUI INICIA users -->
+    <div class="divider"></div>
+      <div class="col-md-6 col-sm-6 col-xs-6 edit-2">
+        <h3>USER</h3>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Nombre:</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-label-name" id="" placeholder="">
+          </div>
+        </div>
+
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Image:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-label-name" id="" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-label-name" id="" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Pass:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-label-name" id="" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Confirm Pass:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-label-name" id="" placeholder="">
+        </div>
+      </div>
+    </form>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+      <div class="boton">
+        <button type="submit" class="btn btn-save">Save</button>
+      </div>
+        
+      </div>
+    </div> 
+</div>
+
+  <div class="row">
+    <div class="col-md-2">
+    </div>padding-top: 73px;
+        <div class="text-area">
+          <div class="col-md-6">
+            <div class="migrid-5"></div>
+            <div class="botones">
+            <button type="submit" class="btn btn-save">Edit<%= image_tag "icon.png", class: "icon"%></button>
+            <button type="submit" class="btn btn-save">Delete<%= image_tag "icon.png", class: "icon"%></button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <footer >
+  
+</footer>
+</div> <!-- AQUI TERMINA CONTAINER -->
+
+
+  
+
+</body>
+</html>
