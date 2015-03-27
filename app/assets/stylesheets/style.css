@@ -6,13 +6,26 @@ body{
 body ,a {
   color: rgba(87, 86, 86, 0.61);
 }
+
 .borde{
   border:solid 1px #000;
 }
+
 .botones{
   margin-left: -210px;
 }
 
+#banners{
+  margin-left: 24px;
+}
+
+#filters{
+  margin-left: 40px;
+}
+
+#settings{
+  margin-left: 46px;
+}
 .btn-save{
     color: #26C5AB;
     background-color: #fff;
@@ -21,12 +34,27 @@ body ,a {
     font-weight: 900;
     font-size: 18px;
     margin-left: 128px;
+
     }
 .botton-edit{
   margin-left: 147px;
   margin-top: -31px;
 }
 
+.bienvenido{
+  margin-right: 10px;
+  margin-top: 50px;
+  float: right;
+}
+
+#categories{
+  margin-right: 6px;
+  margin-left: 39px;
+}
+
+.gri-banner{
+  margin-left: -59px;
+}
 .gri{
   float: right;
   margin-top: -205px;
@@ -34,15 +62,13 @@ body ,a {
 }
 
 .gri-one{
-  float: right;
-  margin-top: -205px;
-  margin-right: -163px;
+  margin-left: -15px;
 }
 .gri-two{
-  float: right;
-  margin-top: -409px;
-  margin-right: -118px;
+  margin-left: 36px;
+  margin-top: -26px;
 }
+
 .gri-3{
   float: right;
   margin-top: -472px;
@@ -53,16 +79,20 @@ body ,a {
 .gri-two-1{
   float: right;
   margin-top: 9px;
-  margin-right: -107px;
+  margin-right: -107px;}
 
-
-}
 .edit{
   margin-top: 128px;
   font-size: 15px;
   text-align: right;
 
 }
+.edit_profile{
+ margin-right: -236px;
+margin-top: 129px;
+float: right;
+}
+
 .edit-2{
   margin-top: 58px;
 }
@@ -71,6 +101,8 @@ body ,a {
     overflow-y: scroll;
     height: 200px;
     width: 319px;
+    margin-top: 22px;
+    border: solid 1px #7F8B8D;
 }
 .migrid-2{
 border: solid #F8F9F9 1px;
@@ -79,6 +111,7 @@ height: 200px;
 width: 290px;
 margin-top: 16px;
 margin-left: -22px;
+border: solid 1px #7F8B8D;
 }
 
 .migrid-5{
@@ -88,7 +121,9 @@ height: 151px;
 width: 290px;
 margin-top: 108px;
 margin-left: -88px;
+border: solid 1px #7F8B8D;
 }
+
 .form-catogirias{
    
   border: 1px solid #000;
@@ -135,18 +170,22 @@ margin-left: -88px;
 .left-menu{
   
   color: #BAC2C9;
-  min-height: 1882px;
+  min-height: 2009px;
 }
 
+
+.list-view{
+
+}
 .selected-item{
   background: #243341;
 }
 .slogan{
   text-align: center;
-margin-left: 397px;
-font-size: 31px;
-margin-top: -20px;
-color: rgba(87, 86, 86, 0.61);
+  margin-left: 263px;
+  font-size: 31px;
+  margin-top: -20px;
+  color: rgba(87, 86, 86, 0.61);
 }
 .title-menu{
   padding: 5px;
@@ -217,6 +256,7 @@ margin-left: -23px;
   
 }
 
+
 footer{
   padding-top: 73px;
 }
@@ -280,11 +320,23 @@ footer{
   display: inline-block;
   width: auto;
   vertical-align: middle;
-  border: none !important;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: inherit;
+
+
   }
 
   .btn-default {
     color: #26C5AB;
+    background-color: #fff;
+    border-color: #ccc;
+    border: none !important;
+    }
+
+  .btn-delete{
+    color: red;
     background-color: #fff;
     border-color: #ccc;
     border: none !important;
@@ -316,3 +368,20 @@ content: "\e019";
 font-size: 29px;
 }
 
+/*class the javaScript for preview of image*/
+.thumb{
+     height: 32px;
+     border: 1px solid #000;
+     margin: 10px 5px 0 0;
+}
+
+/*clases de devise*/
+
+.alert {
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+border-radius: 4px;
+text-align: center;
+color: #fff;
+}

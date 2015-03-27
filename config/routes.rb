@@ -1,13 +1,24 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  
+  
+  devise_for :users do
+    get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
+    post "/users/sing_up" => "devise/registration#new", :as => :new_user_registration 
+  end
+  
+
+ #   devise_scope :user do
+ #  root :to => 'devise/sessions#new'
+
+ # end
+ root :to => 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'welcome#index'
-
-  # Example of regular route:
+  
+  # Example of regular route:S
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
@@ -55,4 +66,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
 end

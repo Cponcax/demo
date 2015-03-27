@@ -1,1 +1,3 @@
-
+<% if user_signed_in? %>
+	Bienvenido<%= current_user.email%>
+<% end%>
